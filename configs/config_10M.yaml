@@ -1,0 +1,20 @@
+configuration:
+  mongo:
+    uri: mongodb://localhost:27017/
+    database: bigdata
+    input_collection: measurements
+    output_collection: batch_views
+  sources: 461
+  attributes:
+    - temperature
+    - humidity
+  measurements_in_block: 193
+  time_line:
+    from: 2018-01-01
+    to: 2018-01-15
+  values:
+    minimum: 0.0
+    q1: 2.0
+    median: 5.0
+    q3: 50.0
+    maximum: 200.0
