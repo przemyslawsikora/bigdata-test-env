@@ -13,7 +13,7 @@ configuration:
     from: 2018-01-01
     to: 2018-01-06
   values:
-    minimum: 0.0
+    minimum: -10.0
     q1: 2.0
     median: 5.0
     q3: 50.0

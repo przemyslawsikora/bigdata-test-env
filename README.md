@@ -5,9 +5,9 @@ The application helps to test Big Data solutions
 Requirements:  
 *Python 3.7.1 64-bit*
 
-Application can insert large amount of measurement data into MongoDB database.  
+Application can insert large number of random measurement data into MongoDB database.  
 Example of measurement document inserted to the MongoDB:
-```json
+```text
 {
     "_id" : ObjectId("5c0bb6c580a5d94ed88d3a08"),
     "source" : "/data_sources/00001",
@@ -17,7 +17,10 @@ Example of measurement document inserted to the MongoDB:
 }
 ```
 
-Run the Python script with specific configuration, for example, to insert 1 million documents:
+How can I start?  
+Run the Python <code>measurements-data-sender.py</code> script with specific configuration,  
+add also output file with statistics that should be calculated by your Big Data analysis application.  
+Example: to insert 1 million documents to MongoDb and generate output file stats.json:
 ```bash
-python bigdata-tester.py -c configs/config_1M.yaml
+python measurements-data-sender.py -c configs/config_1M.yaml -o stats.json
 ```
